@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Core SEO & Identity -->
+    <title>Amar Eye Center | Advanced Ophthalmic Care by Dr. Abdul Mohit</title>
+    <meta name="description" content="Experience world-class eye care at Amar Eye Center in Kolkata. Led by Dr. Abdul Mohit (Senior Consultant, MS, FRCS - UK), specializing in Phaco, Glaucoma, and advanced surgeries." />
+    <meta name="keywords" content="Eye Center Kolkata, Dr Abdul Mohit, Ophthalmologist, Cataract Surgery, Glaucoma Treatment, Squint Surgery, Phaco Surgery, Eye Specialist" />
+    <meta name="author" content="Dr. Abdul Mohit - AMR Eye Center" />
+    <link rel="canonical" href="https://amreyecenter.in" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://amreyecenter.in" />
+    <meta property="og:title" content="Amar Eye Center | Advanced Ophthalmic Care" />
+    <meta property="og:description" content="World-class eye care led by Dr. Abdul Mohit with 31+ years of clinical excellence." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Twitter formatting -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amar Eye Center | Advanced Ophthalmic Care" />
+    <meta name="twitter:description" content="World-class eye care led by Dr. Abdul Mohit with 31+ years of clinical excellence." />
+
+    <!-- Resource Optimization: Preconnects & Preloads -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    
+    <!-- High Priority Preloads (LCP Hero Background) -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1200&auto=format&fit=crop" fetchpriority="high" />
+
+    <!-- Schema Markup (JSON-LD) for Local Business & Physician -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Physician",
+            "@id": "https://amreyecenter.in/#physician",
+            "name": "Dr. Abdul Mohit",
+            "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=1200&auto=format&fit=crop",
+            "description": "Senior Consultant Ophthalmologist with 31+ years of experience. MS (Eye), DO, FRCS (Glasgow, UK).",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "1st Floor, Kidwai Apartment, 40/1 Rafi Ahmed Kidwai Road",
+              "addressLocality": "Kolkata",
+              "postalCode": "700016",
+              "addressCountry": "IN"
+            },
+            "telephone": "+91 9027598667",
+            "url": "https://amreyecenter.in"
+          },
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://amreyecenter.in/#clinic",
+            "name": "Amar Eye Center",
+            "medicalSpecialty": "Optometric",
+            "parentOrganization": { "@id": "https://amreyecenter.in/#physician" },
+            "telephone": "+91 9147741140",
+            "url": "https://amreyecenter.in"
+          }
+        ]
+      }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
