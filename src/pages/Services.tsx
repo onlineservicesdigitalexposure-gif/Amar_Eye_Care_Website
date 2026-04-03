@@ -93,7 +93,7 @@ export const Services = () => {
 
             {/* Category Filter Tabs */}
             <div className="flex items-center gap-2 p-1.5 bg-slate-100 rounded-2xl w-full lg:w-auto overflow-x-auto no-scrollbar">
-              <div className="flex items-center gap-1.5 px-3 py-2 text-slate-400 border-r border-slate-200 hidden sm:flex">
+              <div className="flex items-center gap-1.5 px-3 py-2 text-slate-400 border-r border-slate-200 sm:flex">
                 <SlidersHorizontal className="w-4 h-4" />
                 <span className="text-xs font-bold uppercase tracking-wider">{t.servicesPage.filter.label}</span>
               </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Calendar, ShieldCheck, Star } from "lucide-react";
 import { fadeUpVariants, staggerContainer } from "../animations/variants";
 import { useLanguage } from "../context/LanguageContext";
-import heroImage from "../assets/Gallery/HeroPage.jpg";
+import heroVideo from "../assets/HeroSectionVideo.mp4";
 
 export const Hero = () => {
   const { t } = useLanguage();
@@ -90,10 +90,14 @@ export const Hero = () => {
             className="relative"
           >
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white aspect-4/5 md:aspect-square bg-slate-100">
-              <img
-                src={heroImage}
-                alt={t.hero.img.alt}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+              <video
+                src={heroVideo}
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+                aria-label={t.hero.img.alt}
               />
             </div>
             

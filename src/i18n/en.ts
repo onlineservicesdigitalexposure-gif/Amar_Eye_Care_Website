@@ -101,7 +101,7 @@ const en = {
       label: "Successful Procedures",
     },
     years: {
-      value: "31+",
+      value: "36+",
       label: "Years of Excellence",
     },
     consultants: {
@@ -170,7 +170,7 @@ const en = {
       },
       experience: {
         title: "Experience",
-        text: "Over 31 Years of Clinical Excellence",
+        text: "Over 36 Years of Clinical Excellence",
       },
       nabh: {
         title: "NABH Standards",
