@@ -129,7 +129,7 @@ export const Footer = () => {
           </p>
           <p className="text-xs text-slate-500 flex items-center gap-1">
             {t.footer.bottom.credit} <HeartIcon className="w-3 h-3 text-red-500 fill-red-500" /> by
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-teal-400 font-bold hover:text-teal-300 transition-colors ml-1">
+            <a href="https://teamdeos.co.in/" target="_blank" rel="noopener noreferrer" className="text-teal-400 font-bold hover:text-teal-300 transition-colors ml-1">
                {t.footer.bottom.creditLink}
             </a>
           </p>
