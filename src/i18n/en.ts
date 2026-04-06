@@ -156,7 +156,7 @@ const en = {
     quote:
       "Restoring vision is a spiritual journey. Every incision is guided by the pursuit of perfection and the preservation of our patients' most precious sense.",
     floatBadge: {
-      value: "20+",
+      value: "25+",
       label: "Years of Surgical Excellence",
     },
     qualifications: {
@@ -483,11 +483,11 @@ const en = {
       title: "Patient Details",
       name: {
         label: "Full Name",
-        placeholder: "John Doe",
+        placeholder: "Suman Bar",
       },
       phone: {
         label: "Phone Number",
-        placeholder: "+91 98765 43210",
+        placeholder: "+91 6296774399",
       },
       age: {
         label: "Age",
@@ -618,6 +618,12 @@ const en = {
       title: "The AMR Facility",
       subtitle:
         "Explore our NABH-standard infrastructure, state-of-the-art diagnostic platforms, and sterile surgical environments.",
+    },
+    surgerySection: {
+      title: "Surgical Outcomes",
+      subtitle: "Experience the remarkable transformations and visual clarity restored through our precision surgical procedures.",
+      before: "Before Surgery",
+      after: "After Surgery",
     },
     filter: {
       label: "Perspective",

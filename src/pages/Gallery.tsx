@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { m as motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, SlidersHorizontal, Image as ImageIcon } from "lucide-react";
 import { SectionHeader } from "../components/SectionHeader";
-import { galleryData } from "../data/gallery";
+import { galleryData, surgeryResults } from "../data/gallery";
 import { cn } from "../utils/cn";
 import { fadeUpVariants, staggerContainer } from "../animations/variants";
 import { useLanguage } from "../context/LanguageContext";
@@ -46,9 +46,74 @@ export const Gallery = () => {
         title={t.seo.gallery.title}
         description={t.seo.gallery.description}
       />
-      {/* Header Section */}
-      <section className="bg-white pt-12 pb-20 border-b border-slate-100 relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-teal-50 rounded-full blur-3xl opacity-40 -translate-x-1/2 -translate-y-1/2" />
+      {/* Section 1: Surgical Outcomes Header & Content */}
+      <section className="bg-white pt-24 pb-20 border-b border-slate-100 overflow-hidden relative">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-teal-50 rounded-full blur-3xl opacity-40 translate-x-1/2 -translate-y-1/2" />
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <SectionHeader 
+            title={t.gallery.surgerySection.title} 
+            subtitle={t.gallery.surgerySection.subtitle}
+            align="left"
+          />
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="flex flex-col gap-24 mt-12"
+          >
+            {surgeryResults.map((result) => (
+              <motion.div 
+                key={result.id} 
+                variants={fadeUpVariants}
+                className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start"
+              >
+                {/* Before Image Box */}
+                <div className="group space-y-6">
+                  <div className="relative aspect-[4/3] rounded-[3rem] overflow-hidden bg-slate-50 border border-slate-200 shadow-sm transition-all duration-500 hover:shadow-2xl flex items-center justify-center p-8">
+                    <img 
+                      src={result.before} 
+                      alt="Before Surgery"
+                      className="w-full h-full object-contain drop-shadow-2xl transform transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute top-8 left-8 bg-slate-900/90 backdrop-blur-md px-5 py-2 rounded-2xl text-[10px] font-bold text-white uppercase tracking-[0.2em] border border-white/10 shadow-lg">
+                      {t.gallery.surgerySection.before}
+                    </div>
+                  </div>
+                  <div className="px-8">
+                    <h4 className="text-2xl font-bold text-slate-900 mb-3 tracking-tight">{result.title}</h4>
+                    <p className="text-base text-slate-500 leading-relaxed max-w-md">{result.description}</p>
+                  </div>
+                </div>
+
+                {/* After Image Box */}
+                <div className="group space-y-6">
+                  <div className="relative aspect-[4/3] rounded-[3rem] overflow-hidden bg-[#f0fdfa] border border-teal-100 shadow-sm transition-all duration-500 hover:shadow-2xl flex items-center justify-center p-8">
+                    <img 
+                      src={result.after} 
+                      alt="After Surgery"
+                      className="w-full h-full object-contain drop-shadow-2xl transform transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute top-8 right-8 bg-teal-600/90 backdrop-blur-md px-5 py-2 rounded-2xl text-[10px] font-bold text-white uppercase tracking-[0.2em] border border-white/10 shadow-lg">
+                      {t.gallery.surgerySection.after}
+                    </div>
+                  </div>
+                  <div className="px-8">
+                    <h4 className="text-2xl font-bold text-teal-700 mb-3 tracking-tight">{t.gallery.surgerySection.after} Result</h4>
+                    <p className="text-base text-slate-500 leading-relaxed max-w-md">Vision restoration achieved through specialized ophthalmic care and advanced recovery protocols.</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Section 2: The AMR Facility Header, Filters & Grid */}
+      <section className="bg-slate-50 py-24 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-teal-50/50 rounded-full blur-3xl opacity-60 -translate-x-1/2 -translate-y-1/2" />
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <SectionHeader 
@@ -57,32 +122,27 @@ export const Gallery = () => {
           />
           
           {/* Category Filter Tabs */}
-          <div className="flex items-center gap-2 mt-8 p-1.5 bg-slate-100 rounded-2xl w-fit overflow-x-auto no-scrollbar mx-auto lg:mx-0">
-            <div className="flex items-center gap-1.5 px-3 py-2 text-slate-400 border-r border-slate-200 hidden sm:flex">
+          <div className="flex items-center gap-2 mt-8 mb-16 p-2 bg-white/80 backdrop-blur-md border border-slate-200 rounded-[2rem] w-fit overflow-x-auto no-scrollbar mx-auto lg:mx-0 shadow-sm">
+            <div className="flex items-center gap-2 px-4 py-2 text-slate-400 border-r border-slate-200 hidden sm:flex">
               <SlidersHorizontal className="w-4 h-4" />
-              <span className="text-xs font-bold uppercase tracking-wider">{t.gallery.filter.label}</span>
+              <span className="text-[10px] font-bold uppercase tracking-[0.15em]">{t.gallery.filter.label}</span>
             </div>
             {categories.map(cat => (
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
                 className={cn(
-                  "px-5 py-2.5 rounded-xl text-sm font-bold transition-all whitespace-nowrap",
+                  "px-6 py-3 rounded-2xl text-xs font-bold transition-all whitespace-nowrap tracking-wide",
                   activeCategory === cat.id 
-                    ? "bg-white text-teal-600 shadow-sm" 
-                    : "text-slate-500 hover:text-slate-700 hover:bg-slate-200/50"
+                    ? "bg-teal-600 text-white shadow-md shadow-teal-600/20" 
+                    : "text-slate-500 hover:text-slate-800 hover:bg-slate-100"
                 )}
               >
                 {cat.label}
               </button>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Grid Layout */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatePresence mode="popLayout">
             {filteredImages.length > 0 ? (
               <motion.div 
@@ -157,7 +217,7 @@ export const Gallery = () => {
               initial={{ scale: 0.9, y: 40 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.9, y: 40 }}
-              src={selectedImage}
+              src={selectedImage || undefined}
               alt={t.gallery.lightbox.imgAlt}
               className="max-w-full max-h-[85vh] object-contain rounded-[2.5rem] shadow-none"
               onClick={(e) => e.stopPropagation()}

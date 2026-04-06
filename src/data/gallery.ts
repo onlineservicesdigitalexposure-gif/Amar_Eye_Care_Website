@@ -3,14 +3,16 @@ import clinicInt2 from '../assets/Gallery/Clinic Interior2.jpg';
 import equip1 from '../assets/Gallery/Equipment1.jpg';
 import equip2 from '../assets/Gallery/Equipment2.jpg';
 import patient1 from '../assets/Gallery/Patient Care1.jpg';
-import patient2 from '../assets/Gallery/Patient Care2.jpg';
-import patient3 from '../assets/Gallery/Patient Care3.jpg';
-import patient4 from '../assets/Gallery/Patient Care4.jpg';
-import patient5 from '../assets/Gallery/Patient Care5.jpg';
-import patient6 from '../assets/Gallery/Patient Care6.jpg';
-import patient7 from '../assets/Gallery/Patient Care7.jpg';
 import surgery1 from '../assets/Gallery/Surgery Room1.jpg';
 import surgery2 from '../assets/Gallery/Surgery Room2.jpg';
+
+// Surgery Results (Before/After)
+import before1 from '../assets/Surgery/BeforeSurgery1.jpg';
+import after1 from '../assets/Surgery/AfterSurgery1.jpg';
+import before2 from '../assets/Surgery/BeforeSurgery2.jpg';
+import after2 from '../assets/Surgery/AfterSurgery2.jpg';
+import before3 from '../assets/Surgery/BeforeSurgery3.jpg';
+import after3 from '../assets/Surgery/AfterSurgery3.jpg';
 
 export interface GalleryImage {
   id: number;
@@ -29,11 +31,37 @@ export const galleryData: GalleryImage[] = [
   { id: 5, category: "Surgery Room", url: surgery1, alt: "Sterile Operating Theater" },
   { id: 6, category: "Surgery Room", url: surgery2, alt: "Laser Vison Correction Suite" },
   
-  { id: 7, category: "Patient Care", url: patient1, alt: "Doctor consulting a patient" },
-  { id: 8, category: "Patient Care", url: patient2, alt: "Vision Testing" },
-  { id: 9, category: "Patient Care", url: patient3, alt: "Slit Lamp Examination" },
-  { id: 10, category: "Patient Care", url: patient4, alt: "Comprehensive Eye Exam" },
-  { id: 11, category: "Patient Care", url: patient5, alt: "Patient Consultation" },
-  { id: 12, category: "Patient Care", url: patient6, alt: "Eye Care Checkup" },
-  { id: 13, category: "Patient Care", url: patient7, alt: "Dedicated Patient Service" }
+  { id: 7, category: "Patient Care", url: patient1, alt: "Doctor consulting a patient" }
+];
+
+export interface SurgeryResult {
+  id: number;
+  before: string;
+  after: string;
+  title: string;
+  description: string;
+}
+
+export const surgeryResults: SurgeryResult[] = [
+  {
+    id: 1,
+    before: before1,
+    after: after1,
+    title: "Cataract Transformation",
+    description: "Successful micro-incision surgery restoring full clarity."
+  },
+  {
+    id: 2,
+    before: before2,
+    after: after2,
+    title: "Visual Restoration",
+    description: "Precision treatment for complex ocular conditions."
+  },
+  {
+    id: 3,
+    before: before3,
+    after: after3,
+    title: "Surgical Excellence",
+    description: "Advanced surgical outcomes for optimal eye health."
+  }
 ];
