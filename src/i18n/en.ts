@@ -166,7 +166,7 @@ const en = {
       },
       expertise: {
         title: "Expertise",
-        text: "Advanced Micro-Incision Phaco Surgery",
+        text: "Advanced Micro-Incision, Phaco Surgery,Glaucoma Management, Squint  Management",
       },
       experience: {
         title: "Experience",
@@ -416,7 +416,7 @@ const en = {
       name: "Murshidabad Branch",
       label: "Amtala / Surangapur",
       address:
-        "2, Amtala - Bhabanipur Rd, beside S.B Medicine Supply, Amtala, Surangapur, West Bengal 742121",
+        "Romana Clinic, Opposite Amtala Haat, Amtala, Dist – Murshidabad, West Bengal, Pin – 742121",
       phone1: "+91 74077 59050",
       phone2: "+91 86429 23439",
       hours: "Every Alternate Sunday (Bi-Weekly)",
