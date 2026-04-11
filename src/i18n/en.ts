@@ -620,7 +620,7 @@ const en = {
         "Explore our NABH-standard infrastructure, state-of-the-art diagnostic platforms, and sterile surgical environments.",
     },
     surgerySection: {
-      title: "Surgical Outcomes",
+      title: "Squint Surgical Outcomes",
       subtitle: "Experience the remarkable transformations and visual clarity restored through our precision surgical procedures.",
       before: "Before Surgery",
       after: "After Surgery",
