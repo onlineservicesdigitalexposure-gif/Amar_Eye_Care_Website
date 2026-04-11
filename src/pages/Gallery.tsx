@@ -15,9 +15,9 @@ export const Gallery = () => {
 
   const categories = [
     { id: "All", label: t.gallery.filter.all },
-    { id: "Clinic Interior", label: t.gallery.filter.interior },
-    { id: "Equipment", label: t.gallery.filter.equipment },
     { id: "Patient Care", label: t.gallery.filter.care },
+    { id: "Equipment", label: t.gallery.filter.equipment },
+    { id: "Clinic Interior", label: t.gallery.filter.interior },
     { id: "Surgery Room", label: t.gallery.filter.surgery },
   ];
 

@@ -630,7 +630,7 @@ const bn: TranslationKeys = {
       label: "বাছাই করুন",
       all: "সব",
       interior: "ক্লিনিক ইন্টেরিয়র",
-      equipment: "যন্ত্রপাতি",
+      equipment: "আধুনিক যন্ত্রপাতি",
       care: "রোগী সেবা",
       surgery: "অস্ত্রোপচার কক্ষ",
     },

@@ -629,7 +629,7 @@ const en = {
       label: "Perspective",
       all: "All",
       interior: "Clinic Interior",
-      equipment: "Equipment",
+      equipment: "Modern Equipment",
       care: "Patient Care",
       surgery: "Surgery Room",
     },

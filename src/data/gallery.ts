@@ -2,6 +2,7 @@ import clinicInt1 from '../assets/Gallery/Clinic Interior1.jpg';
 import clinicInt2 from '../assets/Gallery/Clinic Interior2.jpg';
 import equip1 from '../assets/Gallery/Equipment1.jpg';
 import equip2 from '../assets/Gallery/Equipment2.jpg';
+import equip3 from '../assets/Gallery/Equipment3.jpeg';
 import patient1 from '../assets/Gallery/Patient Care1.jpg';
 import surgery1 from '../assets/Gallery/Surgery Room1.jpg';
 import surgery2 from '../assets/Gallery/Surgery Room2.jpg';
@@ -22,16 +23,17 @@ export interface GalleryImage {
 }
 
 export const galleryData: GalleryImage[] = [
+  { id: 7, category: "Patient Care", url: patient1, alt: "Doctor consulting a patient" },
+
+  { id: 3, category: "Equipment", url: equip1, alt: "Advanced OCT Machine" },
+  { id: 4, category: "Equipment", url: equip2, alt: "Phacoemulsification Console" },
+  { id: 8, category: "Equipment", url: equip3, alt: "Vision Testing" },
+
   { id: 1, category: "Clinic Interior", url: clinicInt1, alt: "Modern Reception Area" },
   { id: 2, category: "Clinic Interior", url: clinicInt2, alt: "Comfortable Waiting Lounge" },
   
-  { id: 3, category: "Equipment", url: equip1, alt: "Advanced OCT Machine" },
-  { id: 4, category: "Equipment", url: equip2, alt: "Phacoemulsification Console" },
-  
   { id: 5, category: "Surgery Room", url: surgery1, alt: "Sterile Operating Theater" },
-  { id: 6, category: "Surgery Room", url: surgery2, alt: "Laser Vison Correction Suite" },
-  
-  { id: 7, category: "Patient Care", url: patient1, alt: "Doctor consulting a patient" }
+  { id: 6, category: "Surgery Room", url: surgery2, alt: "Laser Vison Correction Suite" }
 ];
 
 export interface SurgeryResult {
