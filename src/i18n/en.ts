@@ -577,7 +577,7 @@ const en = {
       },
       amtala: {
         title: "Murshidabad Branch",
-        address: "Amtala - Bhabanipur Rd, Surangapur, West Bengal 742121",
+        address: "Amtala - Romana Clinic, Opposite Amtala Haat, Dist – Murshidabad, West Bengal, Pin – 742121",
         hours: "Every Alternate Sunday",
       },
       contact: {
