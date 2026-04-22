@@ -160,6 +160,10 @@ const en = {
       label: "Years of Surgical Excellence",
     },
     qualifications: {
+      degree: {
+        title: "Degree",
+        text: "MBBS, M.S.(Ophth,1989), D.O.(Alig), F.R.C.S.(Glasgow-UK,2005)",
+      },
       specialization: {
         title: "Specialization",
         text: "Senior Consultant Ophthalmologist",

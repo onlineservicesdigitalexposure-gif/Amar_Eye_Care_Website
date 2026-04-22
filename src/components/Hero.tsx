@@ -92,7 +92,7 @@ export const Hero = () => {
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white aspect-4/5 md:aspect-square bg-slate-100">
               <video
                 src={heroVideo}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain sm:object-cover "
                 autoPlay
                 loop
                 muted

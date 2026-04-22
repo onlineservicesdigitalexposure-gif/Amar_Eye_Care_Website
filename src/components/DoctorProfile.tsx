@@ -9,6 +9,7 @@ export const DoctorProfile = () => {
   const { t } = useLanguage();
 
   const qualifications = [
+    { icon: GraduationCap, title: t.doctor.qualifications.degree.title, text: t.doctor.qualifications.degree.text },
     { icon: GraduationCap, title: t.doctor.qualifications.specialization.title, text: t.doctor.qualifications.specialization.text },
     { icon: Microscope, title: t.doctor.qualifications.expertise.title, text: t.doctor.qualifications.expertise.text },
     { icon: Award, title: t.doctor.qualifications.experience.title, text: t.doctor.qualifications.experience.text },
