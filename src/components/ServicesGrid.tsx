@@ -10,7 +10,7 @@ export const ServicesGrid = () => {
     {
       id: "painless-cataract-surgery",
       title: "Painless Cataract Surgery",
-      description: "Advanced micro-incision cataract surgery using state-of-the-art technology for rapid visual recovery.",
+      description: "PHACOSURGERY and Advanced micro-incision cataract surgery using state-of-the-art technology for rapid visual recovery.",
       icon: Eye,
     },
     {

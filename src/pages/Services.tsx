@@ -10,7 +10,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { SEO } from "../components/ui/SEO";
 
 const iconMap: Record<string, any> = {
-  "painless-cataract-surgery": Eye,
+  "cataract-management": Eye,
   "glaucoma-management": Activity,
   "vision-correction": Target,
   "pediatric-eye-care": Users,
@@ -20,7 +20,7 @@ const iconMap: Record<string, any> = {
 
 // Map slugs to translation data keys
 const slugToKeyMap: Record<string, any> = {
-  "painless-cataract-surgery": "cataract",
+  "cataract-management": "cataract",
   "glaucoma-management": "glaucoma",
   "vision-correction": "vision",
   "pediatric-eye-care": "pediatric",

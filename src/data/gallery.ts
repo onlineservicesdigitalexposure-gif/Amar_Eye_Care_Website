@@ -31,7 +31,7 @@ export const galleryData: GalleryImage[] = [
 
   { id: 1, category: "Clinic Interior", url: clinicInt1, alt: "Modern Reception Area" },
   { id: 2, category: "Clinic Interior", url: clinicInt2, alt: "Comfortable Waiting Lounge" },
-  
+
   { id: 5, category: "Surgery Room", url: surgery1, alt: "Sterile Operating Theater" },
   { id: 6, category: "Surgery Room", url: surgery2, alt: "Laser Vison Correction Suite" }
 ];
@@ -49,8 +49,8 @@ export const surgeryResults: SurgeryResult[] = [
     id: 1,
     before: before1,
     after: after1,
-    title: "Cataract Transformation",
-    description: "Successful micro-incision surgery restoring full clarity."
+    title: "",
+    description: ""
   },
   {
     id: 2,

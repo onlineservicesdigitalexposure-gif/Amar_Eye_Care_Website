@@ -240,9 +240,9 @@ const en = {
         "Delivering world-class ophthalmic care using the most advanced diagnostic and surgical technologies available.",
     },
     cataract: {
-      title: "Painless Cataract Surgery",
+      title: "Cataract Management",
       description:
-        "Advanced micro-incision cataract surgery using state-of-the-art technology for rapid visual recovery.",
+        "PHACOSURGERY and Advanced micro-incision cataract surgery under topical anaesthesia using state-of-the-art technology for rapid visual recovery.",
     },
     glaucoma: {
       title: "Glaucoma Management",
@@ -297,10 +297,10 @@ const en = {
     },
     data: {
       cataract: {
-        title: "Painless Cataract (Phaco) Surgery",
+        title: "Cataract Management",
         category: "Surgical",
         description:
-          "Advanced micro-incision cataract surgery using state-of-the-art ultrasonic technology for rapid visual recovery.",
+          "PHACOSURGERY and Advanced micro-incision cataract surgery under topical anaesthesia using state-of-the-art technology for rapid visual recovery.",
       },
       glaucoma: {
         title: "Glaucoma Management",

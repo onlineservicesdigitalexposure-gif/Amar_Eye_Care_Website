@@ -7,10 +7,10 @@ export interface ServiceData {
 
 export const servicesData: ServiceData[] = [
   {
-    title: "Painless Cataract (Phaco) Surgery",
-    slug: "painless-cataract-surgery",
+    title: "Cataract Management",
+    slug: "cataract-management",
     category: "Surgical",
-    shortDescription: "Advanced micro-incision cataract surgery using state-of-the-art ultrasonic technology for rapid visual recovery.",
+    shortDescription: "PHACOSURGERY and Advanced micro-incision cataract surgery under topical anaesthesia using state-of-the-art technology for rapid visual recovery.",
   },
   {
     title: "Glaucoma Management",
