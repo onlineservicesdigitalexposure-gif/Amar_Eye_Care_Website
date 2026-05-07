@@ -32,7 +32,6 @@ export const Home = () => {
         }}
       />
       <Hero />
-      <ClinicalStats />
       <WhyChooseUs />
       <DoctorProfile />
       <Testimonials />
