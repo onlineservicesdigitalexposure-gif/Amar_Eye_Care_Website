@@ -1,7 +1,7 @@
 import { Hero } from "../components/Hero";
 import { DoctorProfile } from "../components/DoctorProfile";
 import { BranchLocations } from "../components/BranchLocations";
-import { ClinicalStats } from "../components/ClinicalStats";
+// import { ClinicalStats } from "../components/ClinicalStats";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 import { Testimonials } from "../components/Testimonials";
 import { QuickFAQ } from "../components/QuickFAQ";
