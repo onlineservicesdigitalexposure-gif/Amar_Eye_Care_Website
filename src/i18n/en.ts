@@ -698,8 +698,8 @@ const en = {
     },
     bottom: {
       copyright: "© {year} AMR Eye Center. All rights reserved.",
-      credit: "Design & developed with ♥ by",
-      creditLink: "DEOS",
+      credit: "Design & developed",
+      creditLink: "Digital Exposure Online Service",
     },
   },
 
