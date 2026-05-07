@@ -140,7 +140,7 @@ export const Footer = () => {
           </p>
           <p className="text-sm text-slate-500 flex items-center gap-1">
             {t.footer.bottom.credit}
-            <a href="#" target="_blank" rel="noopener noreferrer" className="text-teal-400 font-bold hover:text-teal-300 transition-colors ml-1 lg:ml-0">
+            <a href="https://www.teamdeoskolkata.in/" target="_blank" rel="noopener noreferrer" className="text-teal-400 font-bold hover:text-teal-300 transition-colors ml-1 lg:ml-0">
               {t.footer.bottom.creditLink}
             </a>
           </p>
